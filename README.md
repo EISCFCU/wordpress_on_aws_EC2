@@ -1,2 +1,4 @@
-# wordpress_on_aws_EC2
-Update 20220414
+# wordpress_on_aws
+Update 20220414 PeggyWang
+Contact mail:eiscfcu@gmail.com
+
