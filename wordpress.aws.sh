@@ -38,7 +38,9 @@ systemctl restart php-fpm.service
 #and download mysql package to yum  and install mysql server from yum
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum localinstall -y https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
-rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022 #憑證過期_更新_20220415
+
+#憑證過期_更新_20220415
+rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022 
 yum install -y mysql-community-server
 
 
