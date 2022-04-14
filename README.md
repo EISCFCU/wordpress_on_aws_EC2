@@ -51,12 +51,18 @@ Contact mail:eiscfcu@gmail.com
 
 ![image](https://user-images.githubusercontent.com/103306835/163395733-1b9e1d90-54e5-4c63-b50b-8def15d500b6.png)
 
-Update packages and install LAMP server
-1.Download WordPress and extract files to var/www/html folder
-2.Install secure MySQL , assign root password, create database ,user and password
-3.Update wp-config.php with provided database value
-4.Enable .htaccess in Apache config httpd.conf
-5.Enable auto start of Apache and MySQL server
+Userdata裡的指令
+.Update packages and install LAMP server
+
+.Download WordPress and extract files to var/www/html folder
+
+.Install secure MySQL , assign root password, create database ,user and password
+
+.Update wp-config.php with provided database value
+
+.Enable .htaccess in Apache config httpd.conf
+
+.Enable auto start of Apache and MySQL server
 
 4.點選[Next：Add Storage]
 
