@@ -4,7 +4,8 @@ PeggyWang 20220414 Update
 Contact mail:eiscfcu@gmail.com
 
 維運費用:8.26 USD/per month
-https://aws.amazon.com/tw/ec2/pricing/
+
+計算參考：https://aws.amazon.com/tw/ec2/pricing/
 
 # 步驟1：新增EC2執行個體
 1.搜尋EC2
