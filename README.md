@@ -1,10 +1,7 @@
-# wordpress_on_aws
+# Wordpress_on_aws
 Update 20220414 PeggyWang
-
 Contact mail:eiscfcu@gmail.com
 
-
-#方案1：使用EC2搭配自動化指令架設Wordpress
 
 #步驟1：新增EC2執行個體
 1.搜尋EC2
