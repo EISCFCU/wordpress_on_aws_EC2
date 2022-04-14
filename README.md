@@ -47,7 +47,7 @@ Contact mail:eiscfcu@gmail.com
 
 ![image](https://user-images.githubusercontent.com/103306835/163395671-818f8b16-e514-458c-b277-b9eb24d255dd.png)
 
-3.選擇wordpress.aws.sh(檔案連結:)
+3.選擇wordpress.aws.sh(檔案連結:https://github.com/EISCFCU/wordpress_on_aws_EC2/blob/main/wordpress.aws.sh)
 
 ![image](https://user-images.githubusercontent.com/103306835/163395733-1b9e1d90-54e5-4c63-b50b-8def15d500b6.png)
 
