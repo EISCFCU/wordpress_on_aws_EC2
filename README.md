@@ -1,9 +1,9 @@
-# Wordpress_on_aws
+# 使用EC2搭配自動化指令架設Wordpress
 Update 20220414 PeggyWang
 Contact mail:eiscfcu@gmail.com
 
 
-#步驟1：新增EC2執行個體
+# 步驟1：新增EC2執行個體
 1.搜尋EC2
 
 ![image](https://user-images.githubusercontent.com/103306835/163394416-ae8cb55f-5498-4f54-bc86-9873bb2d0831.png)
@@ -28,11 +28,11 @@ Contact mail:eiscfcu@gmail.com
 
 ![image](https://user-images.githubusercontent.com/103306835/163395011-a6d59598-5708-4b43-bac4-f912e86a3046.png)
 
-#步驟2：個體存放位置與安全性設定
+# 步驟2：個體存放位置與安全性設定
 
 ![image](https://user-images.githubusercontent.com/103306835/163395489-ce0a12af-cfd7-4440-bd63-461ad24f4b1a.png)
 
-#步驟3：上傳網站檔案
+# 步驟3：上傳網站檔案
 
 1.至Advanced Details 點選[As  file]
 
@@ -54,7 +54,7 @@ Contact mail:eiscfcu@gmail.com
 
 ![image](https://user-images.githubusercontent.com/103306835/163395889-9d00e6b2-570a-4565-8a7b-2e1a939c3449.png)
 
-#步驟4：命名電腦名稱
+# 步驟4：命名電腦名稱
 
 1.增加標籤(Tags)
 
@@ -64,7 +64,7 @@ Contact mail:eiscfcu@gmail.com
 
 ![image](https://user-images.githubusercontent.com/103306835/163396240-b1a06423-6e84-4609-8b46-95e34d1713af.png)
 
-#步驟5：安全群組與開通網頁瀏覽權限
+# 步驟5：安全群組與開通網頁瀏覽權限
 
 1.輸入安全群組(Security Group)
 
@@ -82,7 +82,7 @@ Contact mail:eiscfcu@gmail.com
 
 ![image](https://user-images.githubusercontent.com/103306835/163396633-63c07c2f-9001-4ea6-b976-9fc9d51164f9.png)
 
-#步驟6：啟動Wordpress伺服器
+# 步驟6：啟動Wordpress伺服器
 
 1.Launch EC2
 
