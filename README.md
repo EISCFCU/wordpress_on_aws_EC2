@@ -30,8 +30,9 @@ Contact mail:eiscfcu@gmail.com
 ![image](https://user-images.githubusercontent.com/103306835/163395011-a6d59598-5708-4b43-bac4-f912e86a3046.png)
 
 # 步驟2：個體存放位置與安全性設定
+放在雲端上的電腦的安全設定；Subnet設定所屬us-east-1a
+![image](https://user-images.githubusercontent.com/103306835/163397822-791fd52c-9a95-498e-9c48-46dd03af293c.png)
 
-![image](https://user-images.githubusercontent.com/103306835/163395489-ce0a12af-cfd7-4440-bd63-461ad24f4b1a.png)
 
 # 步驟3：上傳網站檔案
 
@@ -52,8 +53,8 @@ Contact mail:eiscfcu@gmail.com
 ![image](https://user-images.githubusercontent.com/103306835/163395804-e6c5567a-a48d-4e05-aed3-65a85539fea6.png)
 
 5.點選[Next：Add Tags]
-
-![image](https://user-images.githubusercontent.com/103306835/163395889-9d00e6b2-570a-4565-8a7b-2e1a939c3449.png)
+增加硬碟(EBS)，EBS可以視為電腦的 D槽或是E槽。
+![image](https://user-images.githubusercontent.com/103306835/163397961-29406d0f-9ddc-41ad-b6dd-a1163b4ad86f.png)
 
 # 步驟4：命名電腦名稱
 
