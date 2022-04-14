@@ -59,5 +59,46 @@ Contact mail:eiscfcu@gmail.com
 
 #步驟4：命名電腦名稱
 
+1.增加標籤(Tags)
+
+![image](https://user-images.githubusercontent.com/103306835/163396152-15aaefdf-6263-4357-bed8-a4fca274c222.png)
+
+2.點選 [Next：Configure Security Group]
+
+![image](https://user-images.githubusercontent.com/103306835/163396240-b1a06423-6e84-4609-8b46-95e34d1713af.png)
+
+#步驟5：安全群組與開通網頁瀏覽權限
+
+1.輸入安全群組(Security Group)
+
+![image](https://user-images.githubusercontent.com/103306835/163396374-9dd8fdf0-5f19-4ab1-94ea-7ddb6f28e3de.png)
+
+2.點選[Add Rule]
+
+![image](https://user-images.githubusercontent.com/103306835/163396460-13b61da2-316a-4465-a00b-a53c46f901e9.png)
+
+3.新增Type=HTTP,HTTPS
+
+![image](https://user-images.githubusercontent.com/103306835/163396564-c2d616fc-dd0e-4697-a0d8-3d4f0673e554.png)
+
+4.點選[Review and Launch]
+
+![image](https://user-images.githubusercontent.com/103306835/163396633-63c07c2f-9001-4ea6-b976-9fc9d51164f9.png)
+
+#步驟6：啟動Wordpress伺服器
+
+1.Launch EC2
+
+![image](https://user-images.githubusercontent.com/103306835/163396764-455e4898-76f9-4b61-be20-f8b9647cd775.png)
+
+2.勾選I acknowledge….
+
+![image](https://user-images.githubusercontent.com/103306835/163396828-c3ee4b27-4c85-469e-bf89-528c1b341f40.png)
+
+
+
+
+
+
 
 
