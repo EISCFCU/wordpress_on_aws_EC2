@@ -103,4 +103,3 @@ sed -i '/<Directory "\/var\/www\/html">/,/<\/Directory>/ s/AllowOverride None/Al
 systemctl enable  httpd.service
 systemctl enable mysqld.service
 systemctl restart httpd.service
-
