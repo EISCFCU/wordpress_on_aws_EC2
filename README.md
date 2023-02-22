@@ -52,6 +52,11 @@ Contact mail:eiscfcu@gmail.com
 ![image](https://user-images.githubusercontent.com/103306835/220606509-394f38d1-8e93-4332-bde2-3ac82b77fae9.png)
 
 
+# 目前實施架構
+
+![image](https://user-images.githubusercontent.com/103306835/220607651-b53d7157-d007-47f0-8522-e056d2083b7b.png)
+
+
 # 步驟3：上傳網站檔案
 
 1.點選[進階詳細資訊]
