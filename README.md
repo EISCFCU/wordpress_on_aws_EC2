@@ -1,7 +1,16 @@
 # 使用EC2搭配自動化指令架設Wordpress
-PeggyWang 20220414 Update
+PeggyWang 20230222 Update
 
 Contact mail:eiscfcu@gmail.com
+
+# 實施步驟
+
+![image](https://user-images.githubusercontent.com/103306835/220606021-d046a359-314d-4e01-b950-847d41107714.png)
+
+# 實驗室目前架構
+
+![image](https://user-images.githubusercontent.com/103306835/220606077-f17fb650-eee3-49c1-8158-cb1b10cdb078.png)
+
 
 # 步驟1：新增EC2執行個體
 1.搜尋EC2
@@ -20,103 +29,64 @@ Contact mail:eiscfcu@gmail.com
 
 ![image](https://user-images.githubusercontent.com/103306835/163394805-610e7c8b-9731-4155-afb2-a0a75b6b5837.png)
 
-5.選擇作業系統(這裡稱為AMI映像檔)
+5.輸入執行個體名稱
 
-![image](https://user-images.githubusercontent.com/103306835/163394898-f1b46df6-45ad-4c2d-8a0f-6c33438aace8.png)
+![image](https://user-images.githubusercontent.com/103306835/220606185-125be3a2-941c-4b51-893d-b6597dd5c7f1.png)
 
-6.選擇機器型態
+6.選擇作業系統
 
-![image](https://user-images.githubusercontent.com/103306835/163395011-a6d59598-5708-4b43-bac4-f912e86a3046.png)
+![image](https://user-images.githubusercontent.com/103306835/220606267-b06e36da-6d84-4140-8f3b-4afe1f9eb8db.png)
+
+7.選擇類型
+
+![image](https://user-images.githubusercontent.com/103306835/220606348-6c1cb1a0-c8f6-4f4d-9566-30f4a867ad1c.png)
+
+8.選擇金鑰
+
+![image](https://user-images.githubusercontent.com/103306835/220606406-35423737-2cb1-46de-8c02-7233501fdca0.png)
+
+9.
 
 # 步驟2：個體存放位置與安全性設定
-放在雲端上的電腦的安全設定；Subnet設定所屬us-east-1a
-![image](https://user-images.githubusercontent.com/103306835/163397822-791fd52c-9a95-498e-9c48-46dd03af293c.png)
+
+![image](https://user-images.githubusercontent.com/103306835/220606509-394f38d1-8e93-4332-bde2-3ac82b77fae9.png)
 
 
 # 步驟3：上傳網站檔案
 
-1.至Advanced Details 點選[As  file]
+1.點選[進階詳細資訊]
 
-![image](https://user-images.githubusercontent.com/103306835/163395634-fc48c632-8fea-4b04-9d74-f6b721e6791f.png)
+![image](https://user-images.githubusercontent.com/103306835/220606642-50eceb03-64c7-4fa9-b84b-afb5b91a43a8.png)
 
-2.點選[選擇檔案]
+2.點選[複製](檔案連結:https://github.com/EISCFCU/wordpress_on_aws_EC2/blob/main/wordpress.aws.sh)
 
-![image](https://user-images.githubusercontent.com/103306835/163395671-818f8b16-e514-458c-b277-b9eb24d255dd.png)
+![image](https://user-images.githubusercontent.com/103306835/220606735-19f51036-e6e0-4f8f-9c57-0286b30f53ba.png)
 
-3.選擇wordpress.aws.sh(檔案連結:https://github.com/EISCFCU/wordpress_on_aws_EC2/blob/main/wordpress.aws.sh)
 
-![image](https://user-images.githubusercontent.com/103306835/163395733-1b9e1d90-54e5-4c63-b50b-8def15d500b6.png)
+3.貼上程式碼
 
-Userdata裡的指令
-.Update packages and install LAMP server
+![image](https://user-images.githubusercontent.com/103306835/220606837-3206f952-22ac-44af-8397-bb47a4e819dd.png)
 
-.Download WordPress and extract files to var/www/html folder
 
-.Install secure MySQL , assign root password, create database ,user and password
+# 步驟4：啟動Wordpress伺服器
 
-.Update wp-config.php with provided database value
+1.點選[啟動執行個體]
 
-.Enable .htaccess in Apache config httpd.conf
+![image](https://user-images.githubusercontent.com/103306835/220607042-4ba39bea-e8d2-46fb-aaf5-60a64f19d638.png)
 
-.Enable auto start of Apache and MySQL server
+2.建置狀態
 
-4.點選[Next：Add Storage]
+![image](https://user-images.githubusercontent.com/103306835/220607118-737b7806-da17-4387-93e9-9d115d8e1d5a.png)
 
-![image](https://user-images.githubusercontent.com/103306835/163395804-e6c5567a-a48d-4e05-aed3-65a85539fea6.png)
 
-5.點選[Next：Add Tags]
-增加硬碟(EBS)，EBS可以視為電腦的 D槽或是E槽。
-![image](https://user-images.githubusercontent.com/103306835/163397961-29406d0f-9ddc-41ad-b6dd-a1163b4ad86f.png)
+3.點選[檢視所有執行個體]
 
-# 步驟4：命名電腦名稱
+![image](https://user-images.githubusercontent.com/103306835/220607183-c3e79e20-487b-4b9f-886d-d0a23fbf809f.png)
 
-1.增加標籤(Tags)
-
-![image](https://user-images.githubusercontent.com/103306835/163396152-15aaefdf-6263-4357-bed8-a4fca274c222.png)
-
-2.點選 [Next：Configure Security Group]
-
-![image](https://user-images.githubusercontent.com/103306835/163396240-b1a06423-6e84-4609-8b46-95e34d1713af.png)
-
-# 步驟5：安全群組與開通網頁瀏覽權限
-
-1.輸入安全群組(Security Group)
-
-![image](https://user-images.githubusercontent.com/103306835/163396374-9dd8fdf0-5f19-4ab1-94ea-7ddb6f28e3de.png)
-
-2.點選[Add Rule]
-
-![image](https://user-images.githubusercontent.com/103306835/163396460-13b61da2-316a-4465-a00b-a53c46f901e9.png)
-
-3.新增Type=HTTP,HTTPS
-
-![image](https://user-images.githubusercontent.com/103306835/163396564-c2d616fc-dd0e-4697-a0d8-3d4f0673e554.png)
-
-4.點選[Review and Launch]
-
-![image](https://user-images.githubusercontent.com/103306835/163396633-63c07c2f-9001-4ea6-b976-9fc9d51164f9.png)
-
-# 步驟6：啟動Wordpress伺服器
-
-1.Launch EC2
-![image](https://user-images.githubusercontent.com/103306835/163396764-455e4898-76f9-4b61-be20-f8b9647cd775.png)
-
-2.勾選I acknowledge….
-![image](https://user-images.githubusercontent.com/103306835/163396828-c3ee4b27-4c85-469e-bf89-528c1b341f40.png)
-
-3.點選[Launch instances]
-![image](https://user-images.githubusercontent.com/103306835/163399504-ecba57f5-554c-4b08-8cce-155c35fd6f30.png)
-
-4.建置狀態
-![image](https://user-images.githubusercontent.com/103306835/163399584-4dc8b797-a8fd-42d7-a1b1-8f59e149087a.png)
-
-5.點選[View Instances]
-![image](https://user-images.githubusercontent.com/103306835/163399664-dc7b7de1-f18b-4ca9-81b6-7ecc2954603f.png)
-
-6.等待Status轉為2/2 checks
+4.等待Status轉為2/2 checks
 ![image](https://user-images.githubusercontent.com/103306835/163399726-b86aa254-6f7a-4a81-a009-1fdab2012d0f.png)
 
-# 步驟7：登入你的Wordpress管理後臺
+# 步驟5：登入你的Wordpress管理後臺
 
 1.勾選Wordpress
 ![image](https://user-images.githubusercontent.com/103306835/163399889-1a9b3e2e-8107-4540-9493-c75408ac6551.png)
